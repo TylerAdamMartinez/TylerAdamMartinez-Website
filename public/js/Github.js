@@ -2,6 +2,9 @@ const populateGithubProfile = (GithubProfileData) => {
     let githubImgDiv = document.createElement("div");
     githubImgDiv.setAttribute("id", "githubImg");
 
+    let githubStatsDiv = document.createElement("div");
+    githubStatsDiv.setAttribute("id", "githubStats");
+
     let githubInfoDiv = document.createElement("div");
     githubInfoDiv.setAttribute("id", "githubInfo");
     
@@ -11,6 +14,12 @@ const populateGithubProfile = (GithubProfileData) => {
     githubImg.setAttribute("height", "460");
     githubImg.setAttribute("width", "460");
     githubImgDiv.appendChild(githubImg);
+
+    let githubStats = document.createElement('img');
+    githubStats.setAttribute("src", `https://github-readme-stats.vercel.app/api?username=${GithubProfileData.login}&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=buefy`);
+    githubStats.setAttribute("alt", `${GithubProfileData.name}'s Github General Stats`);
+    githubStatsDiv.appendChild(githubStats);
+
 
     let githubBio = document.createElement('p');
     githubBio.textContent = `${GithubProfileData.bio}`;
@@ -42,6 +51,7 @@ const populateGithubProfile = (GithubProfileData) => {
 
     let githubTitle = document.querySelector('#github');
     githubTitle.append(githubImgDiv);
+    githubTitle.append(githubStatsDiv);
     githubTitle.append(githubInfoDiv);
 
 };
