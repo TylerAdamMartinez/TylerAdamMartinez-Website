@@ -1,0 +1,368 @@
+:root {
+  --bg-color: #ebebd3; /* Beige */
+  --text-color: #083d77; /* Indigo Dye */
+  --link-color: #f78764; /* Coral */
+  --header-color: #da4167; /* Cerise */
+  --subheader-color: #f4d35e; /* Orange Yellow Crayola */
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "rockwell";
+  color: var(--text-color);
+  margin: 0;
+}
+
+body a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+body a :hover {
+  text-decoration: underline;
+}
+
+body h1,
+body h3,
+body h5 {
+  color: var(--subheader-color);
+}
+
+body h2,
+body h4,
+body h6 {
+  color: var(--header-color);
+}
+
+@media screen and (max-width: 1280px) {
+  body #About-Me {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body #mainSection {
+    margin: 15px;
+    padding: 15px;
+    border: none;
+    max-width: 100vw;
+  }
+
+  body section {
+    margin: 15px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: var(--text-color);
+    max-width: 100vw;
+  }
+}
+
+body .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  body .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  body .container {
+    width: 90em;
+  }
+}
+
+/* CSS Section #mainSection */
+body #mainSection {
+  margin-top: 5rem;
+}
+
+body #mainSection #cycletxt-1 {
+  display: block;
+  opacity: 1;
+}
+
+body #mainSection #cycletxt-2 {
+  display: none;
+  opacity: 1;
+}
+
+body #mainSection hr {
+  border: 3px solid var(--text-color);
+  border-radius: 5px;
+  width: 50vw;
+}
+
+body #mainSection h2,
+body #mainSection h4 {
+  text-align: center;
+}
+
+/* CSS Header #topBar */
+body #topBar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--header-color);
+  opacity: 95%;
+  color: var(--subheader-color);
+}
+
+body #topBar h2,
+body #topBar h4 a {
+  color: var(--bg-color);
+}
+
+/* CSS Section #openWeather */
+body #openWeather {
+  padding: 15px;
+  margin: 15px;
+  display: grid;
+}
+
+body div .openWeatherImg {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+body div .openWeatherTimeAndLocation {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+body div .openWeatherDescription {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  align-self: flex-end;
+}
+
+body #openWeather .openWeatherTimeAndLocation {
+  text-align: right;
+}
+
+body #openWeather .openWeatherTimeAndLocation h2,
+body #openWeather .openWeatherTimeAndLocation h4 {
+  margin: 5px;
+}
+
+body #openWeather .openWeatherDescription h2,
+body #openWeather .openWeatherDescription h4,
+body #openWeather .openWeatherDescription p {
+  margin: 5px;
+}
+
+@media (max-width: 1028px) {
+  body #openWeather {
+    padding: 0;
+    margin: 0;
+  }
+
+  body div .openWeatherImg {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  body div .openWeatherTimeAndLocation {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  body div .openWeatherDescription {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  body #openWeather .openWeatherTimeAndLocation {
+    text-align: right;
+  }
+
+  body #openWeather img {
+    height: auto;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  body #openWeather,
+  body #openWeather .openWeatherTimeAndLocation {
+    text-align: center;
+  }
+}
+
+body #openWeather #clock,
+body #openWeather #openWeatherCurrentTemperature {
+  font-size: 4rem;
+}
+
+/* CSS Section #About-Me */
+#About-Me {
+  display: grid;
+}
+
+#hi-there {
+  display: flex;
+  align-items: center;
+}
+
+#hi-there p {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+@media screen and (min-width: 1280px) {
+  #About-Me {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  #About-Me ul h4 {
+    text-align: center;
+  }
+
+  body .About-MeInfo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+  }
+  body #General-Experience {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  body #General-Knowledge {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  body #Programming-Knowledge {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+}
+
+#About-MeTitle {
+  text-align: center;
+}
+
+#About-Me ul {
+  list-style-type: symbols();
+  margin: 15px;
+  padding: 15px;
+}
+
+/* CSS Section #github */
+body #github {
+  display: grid;
+}
+
+body #github img {
+  margin: 15px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  border-color: var(--text-color);
+}
+
+#githubImg {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+
+#githubInfo {
+  align-self: center;
+  margin: 15px;
+  padding: 15px;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 800px) {
+  body #github #githubTitle {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  #githubImg {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  #githubInfo {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  body #github img {
+    height: auto;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+  }
+}
+
+/* CSS Footer */
+body footer {
+  text-align: center;
+}
+
+body footer ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS resume.html page */
+#resume {
+  padding-top: 5rem;
+}
+
+body #resume section {
+  border: none;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1280px) {
+  #resume section {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #resume iframe {
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+#resume h2 {
+  text-align: center;
+}
+
+#resume button {
+  color: var(--bg-color);
+  background-color: var(--header-color);
+  padding: 15px;
+  border: 1px solid var(--header-color);
+  border-radius: 15px;
+}
+
+#resume iframe {
+  border: 5px solid var(--text-color);
+  border-radius: 15px;
+  height: 75vh;
+}
+
+#resume .resume-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  column-gap: 15px;
+}

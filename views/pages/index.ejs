@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <%- include ("../partials/header.ejs") %> 
+
+    <script src="/js/Github.js" defer></script>
+    <script src="/js/datetime.js" defer></script>
+    <script type="module" src="/js/OpenWeather_API_Key.js"></script>
+    <script type="module" src="/js/OpenWeather.js"></script>
+</head>
+<body>
+    <%- include ("../partials/topBar.ejs") %> 
+    <div class="container">
+        <section id="mainSection">
+            <h2>Tyler&nbsp;Adam&nbsp;Martinez</h2>
+            <h4 id="cycletxt-1">Welcome to my site</h4>
+            <h4 id="cycletxt-2">The following page contains a compiled list of my skills and experiences</h4>  
+            <hr>
+        </section>
+        <section id="openWeather">
+            <div class="openWeatherImg">
+                <img id="openWeatherImage" src="/weather_icons/01d.svg" alt="image of clear sky" role="img" width="500" height="500">
+            </div>
+            <div class="openWeatherTimeAndLocation">
+                <h2><time></time></h2>
+                <h2 id="clock" onload="showTime()"></h2>
+                <h4>Keller, TX</h4>           
+            </div>
+            <div class="openWeatherDescription">
+                <strong><h2 id="openWeatherCurrentTemperature">temp</h2></strong>
+                <h4 id="openWeatherMinMaxTemperature">min & max</h4>
+                <p id="openWeatherCurrentDescription">description</p>                
+            </div>
+        </section>
+        <section id="About-Me">
+            <div class="About-MeInfo">
+                <h2 id="About-MeTitle">About Me</h2>
+                <div id="hi-there">
+                    <p>Hey there!</p>
+                    <img src="/assets/WAVING_HAND_TRANSPARENT.gif" alt="waving hand gif" width="64px" height="64px">                    
+                </div>
+                <p>I am a Junior at the University of North Texas majoring in Computer Science. I am focusing on my studies while building robots with <a href="https://www.untrobotics.com/">UNT Robotics</a>, organizing <a href="https://unthackathon.com/">HackUNT</a>, and teaching programming to High School Students for <a href="https://www.codestreamstudios.com/">CodeStream Studios</a>. As you can see I write software for work and my schoolwork. You can click the link to view <a href="/assets/Resume.pdf">my resume.</a></p>           
+            </div>
+            <ul id="General-Experience">
+                <h4>General Experience</h4>
+                <li>👨🏻‍🏫 Coding Instructor (3 months)</li>
+                <li>👨🏻‍💼 HackUNT Officer (3 months)</li>
+                <li>👨🏻‍💻 NTDaily Webmaster (2 years)</li>
+                <li>🙋🏻‍♂️ Robotics Tutor (1 year 10 months)</li>
+                <li>💰 UNT Robotics Treasurer (2 years)</li>
+                <li>🤖 UNT Robotics Competition Robotics (4 years)</li>
+            </ul>
+            <ul id="General-Knowledge">
+                <h4>General Knowledge</h4>
+                <li>ssh</li>
+                <li>git</li>
+                <li>sftp/ftp</li>
+                <li>matlab</li>
+                <li>labView</li>
+            </ul>
+            <ul id="Programming-Knowledge">
+                <h4>Programming Knowledge</h4>
+                <li>html 5</li>
+                <li>css 3</li>
+                <li>javascript</li>
+                <li>react.js</li>
+                <li>php</li>
+                <li>c</li>
+                <li>c++</li>
+                <li>python</li>
+            </ul>
+        </section>
+        <section id="github"></section>
+    </div>
+    <footer>
+        <ul>
+            <li><small>Special thanks to <a href="https://www.amcharts.com/">amCharts</a> for the weather .svg files</small></li>
+            <li><small>Copyright ©<span role="listitem" id="currentYear"></span>, tyleradammartinez.com. All rights reserved.</small></li>
+        </ul>    
+    </footer>
+</body>
+</html>

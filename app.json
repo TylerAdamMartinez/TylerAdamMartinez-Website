@@ -1,0 +1,8 @@
+{
+  "name": "www.tyler.wiki",
+  "description": "Tyler Adam Martinez's portfolio website",
+  "repository": "git+https://github.com/TylerAdamMartinez/www.tyler.wiki-.git",
+  "logo": "https://avatars.githubusercontent.com/u/57375362",
+  "keywords": ["node", "express", "heroku"],
+  "image": "github avatar"
+}
