@@ -1,3 +1,5 @@
+import getGithubPeopleRequest from "/js/Github_Request.js";
+
 const populateGithubProfile = (GithubProfileData) => {
     let githubImgDiv = document.createElement("div");
     githubImgDiv.setAttribute("id", "githubImg");
