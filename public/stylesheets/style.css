@@ -202,6 +202,8 @@ body #openWeather #openWeatherCurrentTemperature {
 
 /* CSS Section #About-Me */
 #About-Me {
+  padding: 15px;
+  margin: 15px;
   display: grid;
 }
 
@@ -330,6 +332,56 @@ body #github img {
   }
 }
 
+/* CSS Section #githubRepos */
+#githubReposTitle {
+  text-align: center;
+}
+
+#githubRepos .repo {
+  border: 5px var(--text-color) solid;
+  padding: 15px;
+  margin: 15px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  width: inherit;
+}
+
+#githubRepos .repo .githubRepoName {
+  text-align: center;
+}
+
+#githubRepos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  list-style-type: none;
+}
+
+#githubRepos ul li {
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  #githubRepos .repo {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  #githubRepos ul {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1280px) {
+  #githubRepos {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 /* CSS Footer */
 body footer {
   text-align: center;
@@ -340,56 +392,4 @@ body footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-/* CSS resume.html page */
-#resume {
-  padding-top: 5rem;
-}
-
-body #resume section {
-  border: none;
-  height: 100vh;
-}
-
-@media screen and (min-width: 1280px) {
-  #resume section {
-    border: none;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  #resume iframe {
-    width: 100%;
-    margin: auto;
-    display: block;
-    border-left: none !important;
-    border-right: none !important;
-    border-radius: 0 !important;
-  }
-}
-
-#resume h2 {
-  text-align: center;
-}
-
-#resume button {
-  color: var(--bg-color);
-  background-color: var(--header-color);
-  padding: 15px;
-  border: 1px solid var(--header-color);
-  border-radius: 15px;
-}
-
-#resume iframe {
-  border: 5px solid var(--text-color);
-  border-radius: 15px;
-  height: 75vh;
-}
-
-#resume .resume-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-  column-gap: 15px;
 }
