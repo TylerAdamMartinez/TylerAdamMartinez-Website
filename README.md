@@ -1,5 +1,9 @@
-# <p align="center">Tyler Adam Martinez's Portfolio Website
-### <p align="center"><a href="http://www.tyler.wiki">www.tyler.wiki</a>
+# <p align="center">Tyler Adam Martinez's <a href="http://www.tyler.wiki">Portfolio Website</a>
+
+<p align="center" style="display: flex;" >
+<img src="https://visitor-badge.glitch.me/badge?page_id=tyleradammartinez.tyleradammartinez-website" />
+<img src="https://img.shields.io/npm/l/express" /> </p>
+  
 ### Top Bar
 <img src="README-Assets/sections/Top-Bar.png" />
 
