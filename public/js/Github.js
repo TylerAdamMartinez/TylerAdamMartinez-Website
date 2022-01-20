@@ -20,6 +20,8 @@ const populateGithubProfile = (GithubProfileData) => {
     let githubStats = document.createElement('img');
     githubStats.setAttribute("src", `https://github-readme-stats.vercel.app/api?username=${GithubProfileData.login}&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=buefy`);
     githubStats.setAttribute("alt", `${GithubProfileData.name}'s Github General Stats`);
+    githubStats.setAttribute("height", "200");
+    githubStats.setAttribute("width", "500");
     githubStatsDiv.appendChild(githubStats);
 
 
