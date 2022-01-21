@@ -1,11 +1,5 @@
 export const GITHUB_LOGIN = "tyleradammartinez";
 
-export const getGithubPeopleRequest = async (githubUser) => {
-    let GitHubResponse = await fetch(`https://api.github.com/users/${githubUser}`);
-    let GitHubResponseinJSON = await GitHubResponse.json();
-    return GitHubResponseinJSON;
-};
-
 export const getGithubReposRequest = async (githubUser) => {
     let GitHubResponse = await fetch(`https://api.github.com/users/${githubUser}/repos`);
     let GitHubResponseinJSON = await GitHubResponse.json();
@@ -18,4 +12,5 @@ export const getGithubRepoLanguageRequest = async (githubUser, githubRepo) => {
     return languagesJSON;
 };
 
-export default getGithubPeopleRequest;
+
+export default getGithubReposRequest;

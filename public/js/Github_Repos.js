@@ -22,7 +22,7 @@ const extractRepoData = (element) => {
             }
         });
         
-        let githubRepoNameP = document.createElement("p");
+        let githubRepoNameP = document.createElement("h4");
         githubRepoNameP.setAttribute("class", "githubRepoName");
         let githubRepoName = document.createElement("a");
         githubRepoName.setAttribute("href", `${GithubRepo.url}`);
@@ -62,19 +62,26 @@ const extractRepoData = (element) => {
 let data = getGithubReposRequest(GITHUB_LOGIN);
 data.then((Data) => {
    
+    //<section id="githubRepos">
     let githubReposSection = document.createElement("section");
     githubReposSection.setAttribute("id", "githubRepos");
+    
+    //<h2 id="githubReposTitle">Github Repositories</h2>
     let githubReposTitle = document.createElement('h2');
-    githubReposTitle.textContent = "Github Repositories";
+    let gethubReposUrl = document.createElement('a');
+    gethubReposUrl.textContent = "Github Repositories";
+    gethubReposUrl.setAttribute("href", "https://github.com/TylerAdamMartinez?tab=repositories&type=public");
     githubReposTitle.setAttribute("id", "githubReposTitle");
+    githubReposTitle.appendChild(gethubReposUrl);
     githubReposSection.appendChild(githubReposTitle);
 
+    //An array of <div class="repo">{github repo element object}</div>
     Data.forEach(element => {
         githubReposSection.appendChild(extractRepoData(element));  
     });
 
    let container = document.querySelector(".container");
    container.append(githubReposSection);
-
+    //</section>
 });
 
