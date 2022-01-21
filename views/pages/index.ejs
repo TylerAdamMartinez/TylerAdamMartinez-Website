@@ -2,20 +2,12 @@
 <html lang="en-US">
 <head>
     <%- include ("../partials/header.ejs") %> 
-
-    <script type="module" src="/js/Github_Repos.js"></script>
-    <script type="module" src="/js/Github.js"></script>
-    <script src="/js/datetime.js" defer></script>
-    <script type="module" src="/js/OpenWeather_API_Key.js"></script>
-    <script type="module" src="/js/OpenWeather.js"></script>
 </head>
 <body>
     <%- include ("../partials/topBar.ejs") %> 
     <div class="container">
         <section id="mainSection">
-            <h2>Tyler&nbsp;Adam&nbsp;Martinez</h2>
-            <h4 id="cycletxt-1">Welcome to my site</h4>
-            <h4 id="cycletxt-2">My skills and experience listed</h4>  
+            <h1>Tyler&nbsp;Adam&nbsp;Martinez</h1>  
             <hr>
         </section>
         <section id="openWeather">
@@ -38,9 +30,20 @@
                 <h2 id="About-MeTitle">About Me</h2>
                 <div id="hi-there">
                     <p>Hey there!</p>
-                    <img src="/assets/WAVING_HAND_TRANSPARENT_(COMPRESSED).gif" alt="waving hand gif" width="64px" height="64px">                    
+                    <img src="assets/WAVING_HAND_TRANSPARENT_(COMPRESSED).gif" alt="waving hand gif" width="64px" height="64px">                    
                 </div>
-                <p>I am a Junior at the University of North Texas majoring in Computer Science. I am focusing on my studies while building robots with <a href="https://www.untrobotics.com/">UNT Robotics</a>, organizing <a href="https://unthackathon.com/">HackUNT</a>, and teaching programming to High School Students for <a href="https://www.codestreamstudios.com/">CodeStream Studios</a>. As you can see I write software for work and my schoolwork. You can click the link to view <a href="/Resume.pdf">my resume.</a></p>           
+                <div id="github">
+                    <div id="githubImg">
+                        <img id="githubAvatar" src="assets/github_avatar.jpeg" alt="tyleradammartinez github avatar" width="230" height="230" srcset="">
+                    </div>
+                    <div id="githubInfo">
+                        <p>I am a Junior at the University of North Texas majoring in Computer Science. I am focusing on my studies while building robots with <a href="https://www.untrobotics.com/">UNT Robotics</a>, organizing <a href="https://unthackathon.com/">HackUNT</a>, and teaching programming to High School Students for <a href="https://www.codestreamstudios.com/">CodeStream Studios</a>. As you can see I write software for work and my schoolwork. You can click the link to view <a href="assets/Resume.pdf">my resume.</a></p>
+                        <p>Github: <a href="https://github.com/TylerAdamMartinez">tyleradammartinez</a></p>
+                        <p>Company: <a href="https://www.codestreamstudios.com/">CodeStream Studios, LLC</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/tyleradammartinez/">tyleradammartinez</a></p>
+                        <p>Email: <a href="mailto:tyleradammartinez@outlook.com">tyleradammartinez@outlook.com</a></p>
+                    </div>
+                </div>
             </div>
             <ul id="General-Experience">
                 <h4>General Experience</h4>
@@ -71,7 +74,6 @@
                 <li>python</li>
             </ul>
         </section>
-        <section id="github"></section>
     </div>
     <footer>
         <ul>
