@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <%- include ("../partials/header.ejs") %>
+</head>
+<body>
+    <%- include ("../partials/topBar.ejs") %> 
+    <div class="container">
+        <section id="pageSvg404">
+            <span></span>
+            <img id="pageSvg404Img" src="/assets/404.svg" alt="Broken robot with 404 error" width="500" height="500">
+            <div id="pageSvg404ReturnButton">
+                <a href="/"><button>return to home</button></a>
+            </div>  
+            <span></span>       
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <li role="listitem"><small><a href="https://www.freepik.com/vectors/web">Web vector created by stories - www.freepik.com</a></small></li>
+            <li role="listitem"><small>Copyright ©<span id="currentYear"></span>, tyler.wiki. All rights reserved.</small></li>
+        </ul>    
+    </footer>
+</body>
+</html>
