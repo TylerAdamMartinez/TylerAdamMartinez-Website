@@ -1,12 +1,9 @@
-const displayDate = (() => {
+const displayTime = (() => {
     const today = new Date();
-    const options = { weekday: 'long', month: 'long', day: 'numeric' }
+    const options = { weekday: 'long', month: 'long', day: 'numeric' };
     let timeElement = document.querySelector('time');
     timeElement.setAttribute("datetime", today.toISOString());
     timeElement.textContent = today.toLocaleDateString('en-US', options);
-
-    let currentYearElement = document.querySelector('#currentYear');
-    currentYearElement.textContent = today.getFullYear().toString();
 })();
 
 const checkTime = (i) => {
