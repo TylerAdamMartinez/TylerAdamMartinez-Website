@@ -8,17 +8,10 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tyleradammartinez/tyleradammartinez-website">
 </p>
   
-### Top Bar
-<img src="README-Assets/sections/Top-Bar.png" />
+### <p align="center">Chrome lighthouse 
+<img src="README-Assets/DevTools/Chorme_Lighthouse_ScreenShot_2022-01-21.png" />
 
-### Open Weather
-<img src="README-Assets/sections/Open-Weather.png" />
-
-### About Me
-<img src="README-Assets/sections/About-Me.png" />
-
-### Github
-<img src="README-Assets/sections/Github.png" />
-  
-### Github Repos
-<img src="README-Assets/sections/Github-Repos.png" />
+### <p align="center">Website
+<img src="README-Assets/sections/Welcome to my site.png" />
+<img src="README-Assets/sections/My skills and experience listed.png" />
+<img src="README-Assets/sections/My public repositories listed.png" />
