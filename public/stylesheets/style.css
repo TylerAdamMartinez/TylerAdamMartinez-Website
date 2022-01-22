@@ -500,3 +500,65 @@ body footer ul {
   margin: 0;
   padding: 0;
 }
+
+/* CSS 404-page */
+body #pageSvg404 h1 {
+  font-size: 4em;
+}
+
+body #pageSvg404 {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: grid;
+  grid-template-rows: 10vh 70vh 10vh 10vh;
+  grid-template-columns: 1fr;
+}
+
+body #pageSvg404 img {
+  margin: auto;
+  height: 60vh;
+  width: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  body #pageSvg404 {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
+
+  body #pageSvg404 img {
+    margin: auto;
+    height: auto;
+    width: 80%;
+  }
+}
+
+body #pageSvg404 span {
+  height: 10vh;
+}
+
+body #pageSvg404 button {
+  padding: 15px;
+  font-size: 2em;
+  color: var(--bg-color);
+  background-color: var(--link-color);
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+}
+
+body #pageSvg404 #pageSvg404ReturnButton {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  grid: Button;
+}
+
+body #pageSvg404 #pageSvg404Img {
+  grid: Img;
+}
