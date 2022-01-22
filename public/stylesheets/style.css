@@ -1,7 +1,7 @@
 :root {
   --bg-color: #ebebd3; /* Beige */
   --text-color: #083d77; /* Indigo Dye */
-  --link-color: #f78764; /* Coral */
+  --link-color: #1446a0; /*#f78764; /* Coral */
   --header-color: #da4167; /* Cerise */
   --subheader-color: #f4d35e; /* Orange Yellow Crayola */
 }
@@ -13,6 +13,64 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 850px) {
+  body #topBar h4,
+  body #topBar h4 a {
+    margin: 0.25em;
+    margin-top: 0.35em;
+  }
+
+  body p {
+    font-size: 1.5em;
+  }
+
+  body ul li {
+    font-size: 1.5em;
+  }
+
+  body h4,
+  body h2 {
+    font-size: 2em;
+  }
+
+  .h4 {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body #topBar h4,
+  body #topBar h4 a {
+    font-size: 1.4em;
+  }
+
+  body #mainSection h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body #topBar h4,
+  body #topBar h4 a {
+    margin: 0.15em;
+    margin-top: 0.25em;
+  }
+
+  body p {
+    font-size: 1.25em;
+  }
+
+  body ul li {
+    font-size: 1.25em;
+  }
+
+  body h4,
+  body h2,
+  .h4 {
+    font-size: 1.75em;
+  }
+}
+
 body a {
   color: var(--link-color);
   text-decoration: none;
@@ -20,11 +78,6 @@ body a {
 }
 
 body a:hover {
-  font-size: 1.05rem;
-  text-decoration: underline !important;
-}
-
-#githubInfo a:hover ~ a {
   text-decoration: underline !important;
 }
 
@@ -98,16 +151,6 @@ body .container {
 /* CSS Section #mainSection */
 body #mainSection {
   margin-top: 5rem;
-}
-
-body #mainSection #cycletxt-1 {
-  display: block;
-  opacity: 1;
-}
-
-body #mainSection #cycletxt-2 {
-  display: none;
-  opacity: 1;
 }
 
 body #mainSection hr {
@@ -229,10 +272,16 @@ body #openWeather #openWeatherCurrentTemperature {
   display: grid;
 }
 
+#About-Me ul .h4 {
+  color: var(--header-color);
+  list-style-type: none;
+  font-weight: bold;
+}
+
 #hi-there {
-  padding-left: 75px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -262,7 +311,7 @@ body #openWeather #openWeatherCurrentTemperature {
     grid-template-rows: auto 1fr;
   }
 
-  #About-Me ul h4 {
+  #About-Me ul .h4 {
     text-align: center;
   }
 
@@ -301,6 +350,10 @@ body #github {
   grid-template-columns: auto 1fr;
 }
 
+#githubInfo a:hover ~ a {
+  text-decoration: underline !important;
+}
+
 body #github img {
   margin: 15px;
   border-style: solid;
@@ -310,9 +363,15 @@ body #github img {
 }
 
 #githubImg {
-  display: flex;
-  justify-content: end;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
   grid-row: 1 / 2;
+}
+
+#githubImg #hi-there img {
+  border: none;
+  margin: 0;
 }
 
 #githubInfo {
@@ -344,6 +403,10 @@ body #github img {
     height: auto;
     margin: auto;
     display: block;
+  }
+
+  #githubImg #hi-there img {
+    margin: 0;
   }
 }
 
