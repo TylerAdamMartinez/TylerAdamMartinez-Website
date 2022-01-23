@@ -1,4 +1,4 @@
-# <p align="center">Tyler Adam Martinez's Portfolio Website<br><a href="https://www.tyler.wiki">www.tyler.wiki</a>
+# <p align="center">Tyler Adam Martinez's Portfolio Website<br><a href="https://www.tyleradammartinez.com">www.tyleradammartinez.com</a><br><a href="https://www.tyler.wiki">www.tyler.wiki</a>
 
 <p align="center" style="display: flex;" >
 <img src="https://visitor-badge.glitch.me/badge?page_id=tyleradammartinez.tyleradammartinez-website" />
