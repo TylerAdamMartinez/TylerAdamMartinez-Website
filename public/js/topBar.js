@@ -103,9 +103,3 @@ const toggleSubtitles =  ( async() => {
     }
 
 })();
-
-const displayCurrentYear = (() => {
-    const today = new Date();
-    let currentYearElement = document.querySelector('#currentYear');
-    currentYearElement.textContent = today.getFullYear().toString();
-})();
