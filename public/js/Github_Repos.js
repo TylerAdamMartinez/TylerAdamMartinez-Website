@@ -12,7 +12,7 @@ const extractRepoData = (element) => {
     let repoDiv = document.createElement('div');
     repoDiv.setAttribute("class", "repo");
 
-    getGithubRepoLanguageRequest(GITHUB_LOGIN, element.name).then((data) => {
+    getGithubRepoLanguageRequest(GITHUB_LOGIN, element.name).then(([data, count]) => {
         
         Object.keys(data).forEach((language) => {
             if(language === "C++") {
@@ -21,6 +21,7 @@ const extractRepoData = (element) => {
                 GithubRepo.languages.push(language.toLowerCase()); 
             }
         });
+        console.log(GithubRepo.languages);
         
         let githubRepoNameP = document.createElement("h4");
         githubRepoNameP.setAttribute("class", "githubRepoName");
@@ -36,7 +37,13 @@ const extractRepoData = (element) => {
     
         let repoLanguagesDiv = document.createElement("div");
         let languageTitle = document.createElement("p");
-        languageTitle.textContent = "languages: ";
+        if (count === 1) {
+            languageTitle.textContent = "language: ";
+        } else if (count > 1) {
+            languageTitle.textContent = "languages: ";
+        } else {
+            languageTitle.textContent = "";
+        }
         repoLanguagesDiv.appendChild(languageTitle);
         let languageList = document.createElement("ul");
         repoLanguagesDiv.appendChild(languageList);
